@@ -1,0 +1,12 @@
+[
+  {
+    "url": "http://192.168.0.103:8080/assets/img/banners/b1.jpg",
+    "id": 1,
+    "ordem":1
+  },
+  {
+    "url": "http://192.168.0.103:8080/assets/img/banners/b2.jpg",
+    "id": 2,
+    "ordem":2
+  }
+]

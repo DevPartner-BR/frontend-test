@@ -1,0 +1,34 @@
+﻿{
+  "mensagemAviso": [
+    {
+      "titulo": "Mensagem padrão 1",
+      "url": "#",
+      "data": "25/11/2016",
+      "loginRequired": false
+    },
+    {
+      "titulo": "Mensagem padrão 2",
+      "url": "#",
+      "data": "25/11/2016",
+      "loginRequired": false
+    },
+    {
+      "titulo": "Mensagem padrão 3",
+      "url": "#",
+      "data": "25/11/2016",
+      "loginRequired": false
+    },
+    {
+      "titulo": "Mensagem padrão 4",
+      "url": "#",
+      "data": "25/11/2016",
+      "loginRequired": false
+    },
+    {
+      "titulo": "Mensagem padrão 5",
+      "url": "#",
+      "data": "25/11/2016",
+      "loginRequired": false
+    }
+  ]
+}

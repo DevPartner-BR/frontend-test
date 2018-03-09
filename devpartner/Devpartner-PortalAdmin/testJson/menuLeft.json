@@ -1,0 +1,40 @@
+﻿[
+  {
+    "moduloId": 1,
+    "descricao": "Cadastros",
+    "menus": [
+      {
+        "menuId": 1,
+        "descricao": "Fabricante",
+        "submenus": [],
+        "icone": "ico_fabricante",
+        "estado": "listaFabricante",
+        "url": "cadastro/listaFabricante"
+      },
+      {
+        "menuId": 2,
+        "descricao": "Promotor",
+        "submenus": [],
+        "icone": "ico_promotor",
+        "estado": "listaPromotor",
+        "url": "cadastro/listaPromotor"
+      },
+      {
+        "menuId": 3,
+        "descricao": "Rede/Loja",
+        "submenus": [],
+        "icone": "ico_redeloja",
+        "estado": "listaRede",
+        "url": "cadastro/listaRede"
+      },
+      {
+        "menuId": 4,
+        "descricao": "Usuários",
+        "submenus": [],
+        "icone": "ico_usuarios",
+        "estado": "listaUsuario",
+        "url": "cadastro/listaUsuario"
+      }
+    ]
+  }
+]

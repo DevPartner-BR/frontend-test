@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" ng-app="sysLogin" ng-controller="appController">
+<head>
+    <title>Nufarm</title>
+    <meta name="keywords" content="Nufarm" />
+    <meta name="description" content="Nufarm">
+    <meta name="author" content="Devpartner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <base href="/" />
+    <meta charset="utf-8" />
+
+    <!--BOOTSTRAP-->
+    <link href="assets/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/libs/bootstrap/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <!--FONTS-->
+    <link href="assets/fonts/font-awesome/font-awesome.css" rel="stylesheet" />
+    <link href="assets/fonts/glyphicons/glyphicons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700" rel="stylesheet"> 
+
+    <!--LIBS-->
+    <!--JQUERY-->
+    <script src="assets/libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="assets/libs/bootstrap/bootstrap.min.js"></script>
+
+    <!-- VARIAVEIS GLOBAIS -->
+    <script src="globals.js"></script>
+
+    <!--ANGULAR-->
+    <script src="assets/libs/angularjs/angular1.5.9.min.js"></script>
+    <script src="assets/libs/angularjs/angular-cookies1.5.9.min.js"></script>
+    <script src="assets/libs/angular-ui-router/angular-ui-router0.4.2.min.js"></script>
+    <script src="assets/libs/angularjs/angular-sanitize1.5.9.min.js"></script>
+
+    <!--COMPONENTES PARA O APP, APOS ANGULAR-->
+    <script src="assets/libs/angularjs/moment.min.js"></script>
+    
+    <!--LOADER-->
+    <link href="assets/libs/loader/loading-bar.css" rel="stylesheet">
+    <script src="assets/libs/loader/loading-bar.min.js"></script>
+    <script src="assets/libs/loader/loader.js"></script>
+
+    <!--NOTIFY-->
+    <link href="assets/libs/ngNotify/ng-notify.min.css" rel="stylesheet">
+    <script src="assets/libs/ngNotify/ng-notify.min.js"></script>
+
+    <!--ANGULAR INPUT MASK-->
+    <script src="assets/libs/angularInputMasks/angular-input-masks-standalone.min.js"></script>
+
+    <!-- DEVICE DETECTOR -->
+    <script src="assets/libs/deviceDetector/ng-device-detector.js"></script>
+    <script src="assets/libs/deviceDetector/re-tree.js"></script>
+
+    <!--CUSTOM STYLES-->
+    <link href="assets/css/theme.min.css" rel="stylesheet" />
+    <link href="assets/css/admin-forms.min.css" rel="stylesheet" />
+    <link href="assets/css/custom.css?v=1.1" rel="stylesheet" />
+
+    <!--APP: CONFIG-->
+    <script src="login/app.module.js?v=1.1"></script>  
+    <script src="login/app.controllers.js?v=1.1"></script>
+    <script src="login/app.routes.js?v=1.1"></script>
+    <script src="login/app.services.js?v=1.1"></script>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico?v3">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="animated fadeIn">
+
+    <div id="mainLogin" class="blurish">
+        <div class="">
+            <form method="post" action="/" id="login" class="admin-form theme-info" autocomplete="off" ng-keydown="$event.which === 13 && login()">
+
+                <section class="first-section" id="adminLog">
+                    <div class="container">
+                        
+                        <div class="row mt50">
+                            <div class="col-sm-6 col-md-3 text-center">
+                                
+                            </div>
+                            <div class="col-sm-12 col-md-6 box-admin-log3 mt40">
+                                <div class="row box-admin-login">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <img class="logo-main text-center" src="/assets/img/logoTopWhite.png" alt="">
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div style="max-width: 250px; margin: auto; display: block;">
+                                            <div class="text-center">
+                                                <h2 style="margin-top:0px; color:#fff;">LOGIN ADMIN</h2>
+                                            </div>
+
+                                            <div class="">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="usuario" style="color:#fff;">Usuario:</label>
+                                                            <!--<input ng-model="usuario" id="usuario" class="gui-input" placeholder="000.000.000-00" type="text" autocomplete="off" ui-br-cpf-mask> -->
+                                                            <input ng-model="usuario" id="usuario" class="gui-input" type="text" autocomplete="off" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="senha" style="color:#fff;">Senha:</label>
+                                                            <input ng-model="senha" id="senha" class="gui-input" type="password" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="section forgotPass text-center">
+                                                            <a href="#" onclick="animPop('boxForgot')" style="color:#fff">Esqueci minha senha.</a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-xs-12">
+                                                        <div class="section text-center">
+                                                            <button type="button" class="btn btn-default btn-block" ng-click="login()">ENTRAR</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </form>
+        </div>
+    </div>
+
+    <!--Pop ups-->
+    <div id="popups">
+        <div id="blocker"></div>
+
+        <div id="boxForgot" class="boxMsg popup">
+            <div class="innerBox admin-form admin-form-inverse theme-info">
+
+                <div class="row">
+                    <div class="title text-center">
+                        <h2>Recuperar senha e usuário</h2>
+                    </div>
+                </div>
+
+                <div class="botClose">
+                    <button type="button" class="btn btn-primary" onclick="animPop('boxForgot')"><i class="fa fa-remove"></i></button>
+                </div>
+
+                <div ng-show="flagMsgRecSenha">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <p>Preencha o seu Usuario no campo abaixo para receber sua senha de acesso no e-mail cadastrado. Caso não possua acesso à seu e-mail, entre em contato com o administrados do sistema.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Usuario</label>
+                                <input name="field" id="" class="gui-input" ng-model="initializedCpf" type="text">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="text-center mt20">
+                                <button type="button" class="btn btn-primary" ng-click="esqueciSenha()">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div ng-hide="flagMsgRecSenha">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <p>Enviamos o acesso para seu e-mail aleXXXXXXXXtro@hotmail.com, acesse para recuperá-lo.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center mt20">
+                                <button type="button" class="btn btn-warning" onclick="animPop('boxForgot')">Voltar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Jquery Plugins-->
+    <script src="assets/libs/gsap/TweenMax.min.js"></script>
+
+    <!--Custom script-->
+    <script src="assets/js/popupMaker.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#usuario').removeAttr('readonly');
+                $('#senha').removeAttr('readonly');
+            }, 100)
+        })
+    </script>
+</body>
+</html>

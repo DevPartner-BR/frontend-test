@@ -1,0 +1,11 @@
+﻿{
+    "id": 1,
+    "produto":{
+        "id": 1,
+        "nomeProduto": "itaipava"
+      },
+    "pesoPontos": "12",
+    "valorPontos": "55",
+    "dataInicio": "",
+    "dataTermino": ""
+}

@@ -1,0 +1,15 @@
+﻿{
+
+  "data": [
+    {
+      "name": "Liberados",
+      "y": 500
+    },
+    {
+      "name": "Aguardando Auditoria",
+      "y": 4500
+    }
+  ],
+
+  "category": ["2015", "2016"]
+}

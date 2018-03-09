@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Export HTML table to Excel Format With Jquery- WSnippets.com</title>
+    <meta name="description" content="Export HTML table to Excel Format With Jquery- WSnippets.com" />
+    <link rel="stylesheet" href="style.css" />    
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <div id="test">
+        <div class="wrapper">
+            <h2>WSnippets.com - Export HTML table to Excel Format With Jquery</h2>
+             <div id="dv">
+				<table id="tblExport" style="border:1px solid black; ">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Username</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style='background-color:red;'>1</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Larry</td>
+							<td>the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div>
+				<button id="btnExport">Export to excel</button>
+			</div>
+        </div>
+    </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="jquery.btechco.excelexport.js"></script>
+<script src="jquery.base64.js"></script>0
+<script>
+    $(document).ready(function () {
+        $("#btnExport").click(function () {
+            $("#tblExport").btechco_excelexport({
+                containerid: "tblExport"
+               , datatype: $datatype.Table
+               , filename: 'sample'
+            });
+        });
+    });
+</script>
+</body>
+</html>

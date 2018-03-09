@@ -1,0 +1,26 @@
+﻿[
+  {
+    "id": "1",
+    "nomeProduto": "Itaipava",
+    "pesoPontos": "12",
+    "valorPontos": "55",
+    "dataInicio": "29/07/2017",
+    "dataTermino": ""
+  },
+  {
+    "id": "2",
+    "nomeProduto": "Itaipava",
+    "pesoPontos": "14",
+    "valorPontos": "75",
+    "dataInicio": "30/07/2017",
+    "dataTermino": "29/09/2017"
+  },
+  {
+    "id": "3",
+    "nomeProduto": "Itaipava",
+    "pesoPontos": "10",
+    "valorPontos": "65",
+    "dataInicio": "02/07/2017",
+    "dataTermino": "29/09/2017"
+  }
+]

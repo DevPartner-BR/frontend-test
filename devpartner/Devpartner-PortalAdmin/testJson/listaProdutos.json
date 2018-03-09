@@ -1,0 +1,20 @@
+﻿[
+  {
+    "id": 1,
+    "nomeProduto": "Itaipava",
+    "codigoProduto": "1254353",
+    "dataCriacao": "29/07/2017"
+  },
+  {
+    "id": 2,
+    "nomeProduto": "Skol",
+    "codigoProduto": "73423322",
+    "dataCriacao": "29/07/2017"
+  },
+  {
+    "id": 3,
+    "nomeProduto": "Brahma",
+    "codigoProduto": "1234623456",
+    "dataCriacao": "29/07/2017"
+  }
+]
