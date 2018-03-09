@@ -4,7 +4,8 @@
 
 A relação de parceria estabelecida com o cliente é o ativo mais importante para a DevPartner. É o motor que leva a empresa a conhecer a fundo os negócios do cliente e, junto com ele, desenhar a melhor solução que atenda as suas necessidades.
 
-"A nossa filosofia é a de viver o dia a dia do cliente, conhecer o seu negócio, estar ao seu lado e compreender as suas necessidades para ter a certeza de que vamos produzir o melhor resultado. Ser parceiro é isso!"   ***Eduardo Silvestri, Presidente da [DevPartner](http://devpartner.com.br/)***
+"A nossa filosofia é a de viver o dia a dia do cliente, conhecer o seu negócio, estar ao seu lado e compreender as suas necessidades para ter a certeza de que vamos produzir o melhor resultado. Ser parceiro é isso!"  
+ ***Eduardo Silvestri, Presidente da [DevPartner](http://devpartner.com.br/)***
 
 ## Teste FrontEnd para o DevPartner
 Essa teste consiste em entendermos um pouco mais sobre seus conhecimentos com [HTML](https://www.w3schools.com/tags/default.asp), [CSS](https://www.w3schools.com/cssref/default.asp),
