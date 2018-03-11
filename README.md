@@ -35,17 +35,17 @@ Depois do seu setup você precisará seguir as seguintes instruções, para cons
 
 ## | Requisitos obrigatórios
 1. Escrever o código com Angularjs  ;)
-2. Documentação
-3. Semântica Web 
-4. Ser fiel ao .psd.
-5. Suporte para IE11 e multiplataforma (crossbrowser web / mobile - Responsivo).
-6. Procure manter a estrutura do projeto.
+2. Semântica Web 
+3. Ser fiel ao .psd.
+4. Suporte para IE11 e multiplataforma (crossbrowser web / mobile - Responsivo).
+5. Procure manter a estrutura do projeto.
 
 ## | Requisitos extras 
 1. Automação de tarefas. (Gulp? Grunt? Webpack? :D)
-2. Testes automatizados
-3. Template Engines (underscore, mustache, ou outras de sua preferência)
-4. Performance
+2. Documentação
+3. Testes automatizados
+4. Template Engines (underscore, mustache, ou outras de sua preferência)
+5. Performance
 
 
 ## | Ferramenta de Desenvolvimento
