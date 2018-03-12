@@ -13,30 +13,48 @@ Essa teste consiste em entendermos um pouco mais sobre seus conhecimentos com [H
 
 ## | Orientações
 Primeiramente, faça um fork e clone do projeto;
-Crie uma branch com o seu nome e sobre nome e depois instale as dependências:
+Crie uma branch com o seu nome e sobre nome e depois instale as dependências.
 
+**1. Clone do Projeto**
 ```sh
 git clone "https://github.com/DevPartner-BR/frontend-test.git"
 ```
-
+**2. Criando nova Branch**
 ```sh
 git checkout -b "meunomeEsobrenome"
 ```
+**3. Instalando as dependências**
 
+```sh
+npm install
+```
 
-Depois do seu setup você precisará seguir as seguintes instruções, para construir a aplicação:
+**4. Agora é rodar a aplicação**
+```sh
+npm start
+```
 
-1. Desenvolver a página, que tem o seu layout em **noticias.psd**.
-2. Criar um JavaScript usando o Angularjs que faça o CRUD utilizando como fonte **/noticias.json**
-  * Apresentar os dados requisitados pelo layout.
-3.  **NÃO** alterar o arquivo **noticias.json**. Em hipótese nenhuma!
+***Observação:** fique a vontade para persisitir os dados no banco que for da sua preferência. Aqui usamos MS-SQL e similares mas também curtimos NOSQL*
+
+A sua primeira interação será com a página de Login, para facilitar deixamos padráo usuário **admin** e senha **admin**.
+
+### Depois do setup você precisará seguir as seguintes instruções, para construir a aplicação:
+
+1. Desenvolver a página, que tem o seu layout em **galeria.jpg** *(fique tranquilo que facilitamos esta parte. Já criamos a index da galeria)* e os outros itens, contamos com a sua criatividade e senso de coerência.
+2. Criar um JavaScript usando o Angularjs que faça o CRUD (Create, Read, Update and Delete) utilizando como fonte o arquivo **/galeria.json** localizado em **/devpartner/Devpartner-PortalAdmin/data**.
+  * Apresentar os dados do arquivo json nas telas de **index**, **create** e **edit**.
+3.  **NÃO** alterar o arquivo **galeria.json**. Em hipótese nenhuma!
 4. Se for preciso modificar a estrutura e workflow, atualizar o README.
-5. Submeta o Pull Request e envie um email para carlos.ribeiro@devpartner.com.br :D
+5. Submeta o Pull Request e envie um email para **carlos.ribeiro@devpartner.com.br** :D
+
+O que acontece depois ?
+Avaliaremos a sua **Pull Request** e se estiver atendendo os requisitos obrigatórios, marcaremos uma apresentação do exercício, afinal de contas, ninguém melhor que próprio desenvolvedor para explicar o seu projeto =)
+*fique tranquilo já passamos por isso também*
 
 ## | Requisitos obrigatórios
 1. Escrever o código com Angularjs  ;)
 2. Semântica Web 
-3. Ser fiel ao .psd.
+3. CRUD funcionando!
 4. Suporte para IE11 e multiplataforma (crossbrowser web / mobile - Responsivo).
 5. Procure manter a estrutura do projeto.
 
@@ -47,6 +65,9 @@ Depois do seu setup você precisará seguir as seguintes instruções, para cons
 4. Template Engines (underscore, mustache, ou outras de sua preferência)
 5. Performance
 
+## | Quer impressionar ?
+1. Melhore nosso projeto base para testes de front-end (*melhorias relevantes, por favor*)
+2. Demonstre domínio na stack proposta (**menos *import modules*** e **mais domínio da stack**)
 
 ## | Ferramenta de Desenvolvimento
 
