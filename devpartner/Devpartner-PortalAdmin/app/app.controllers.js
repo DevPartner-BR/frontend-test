@@ -37,16 +37,6 @@ function ($scope, $http, $rootScope, ngNotify, $cookieStore, sysServicos) {
     });
 
     $scope.logOut = function () {
-        //API de logout nao esta pronta
-        //var promise = $http.post(rootURL + 'Logout');
-        //promise.then(
-        //    function (ret) {
-        //        console.log('Server Logout OK');
-        //    },
-        //    function (err) {
-        //        sysServicos.sendErrorMsg(err.status, err.statusText, err.config.url);
-        //    }
-        //);
         $rootScope.globals = null;
         $cookieStore.remove('globals');
         $http.defaults.headers.common.Authorization = 'Basic ';

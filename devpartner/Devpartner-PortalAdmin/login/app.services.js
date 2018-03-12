@@ -10,6 +10,14 @@
     "deviceDetector",
     function (Base64, $http, $cookieStore, $rootScope, $timeout, sysServicos, deviceDetector) {
       var service = {};
+      var response = {
+        "access_token": "bdYBNhHTTAaRBYm_AxWoKwJmISQ2QXOZmv4gPjt81w1KOMADLUkNn-C2-rxnESrKaNgLn4vP4FJ-zjqGVINJupXZX9Z7LaRyUoxqEyACtxF3hIa9XMZVCvqsY-nOkk85TlTJoudfZVRfo8Xh_eftHrgO5jOOTu0S6XR4iwTdth7b2pD2K5mXv-ufGb9XQMpaD3hF0VtRLVj_2j4hx9ahz-0USfs4g60m9WImdfp0pFGvAG-G9Tgn4Y4kkYlmzPIiKO5ZwsTi9h_zj3pThk5nSw9mY3cqkZy-UiXq1ZlxYWJavlQH-mf3OVKzDm4y9IG9EOaegU9cg_oa1OCFlg6t2iD-XsT14yVLi4NCl_GnB7cTyAYpdrcYC4RiSlyYb54ilYVGz4qsZmfMD6mAFZniUmYR9QNH6TKbXjwmz0hoXJyCssh-I1JwPtbAj3Uh_AH9FXHHRPQfRlkqBLpDch6pv2Jequ4NUprzcsQ_-LBssdjHKFxQwUUrMyUoPDR5TbBJKI2LHbfCFq77h-UYA67gPNbo1Cpwu2fGMehs4UZVmfg",
+        "token_type": "bearer",
+        "expires_in": 1209599,
+        "userName": "admin",
+        ".issued": "Mon, 12 Mar 2018 19:51:13 GMT",
+        ".expires": "Mon, 26 Mar 2018 19:51:13 GMT"
+      };
 
       //deteccao de origem
       var vm = this;
@@ -25,47 +33,34 @@
         var transform = function(data) {
           return $.param(data);
         };
-
-        $http.post(
-            rootURL + "Token",
-            { username: login, password: senha, grant_type: "password", origem:$rootScope.origem },
-            {
-              headers: { "Content-Type": "multpart/form-data; charset=UTF-8" },
-              transformRequest: transform
-            }
-          )
-          .success(function(response) {
-            //var perfil = JSON.parse(response.roles);
-            //if (typeof perfil != "undefined") {
-            //  if (perfil[0] === "Administrador") {
-                callback(response);
-            //    return;
-            //  }
-           // }
-           // response.error_description =
-           //   "Acesso somente para usuários administradores.";
-           // $rootScope.$broadcast(
-           //   "alertLogin",
-           //   '<span class="ngn-alertLogin">' +
-           //     response.error_description +
-           //     "</span>"
-           // );
-          }).error(function(response) {
-            //if (
-            //  response.error_description ==
-            //  "The user name or password is incorrect."
-            //) {
-            //  response.error_description = "CPF ou senha incorretos.";
-              //}
-              console.log(response);
+        if (login == 'admin' && senha == 'admin') {
+          callback(response);  
+        }
+        else{
+          console.log(response);
               sysServicos.sendWarnMsg('<span class="ngn-alertLogin">' + response.error_description + '</span>');
-            //$rootScope.$broadcast(
-             // "alertLogin",
-            //  '<span class="ngn-alertLogin">' +
-            //    response.error_description +
-            //    "</span>"
-           // );
-          });
+        }
+        
+        //Real World
+        // $http.post(
+        //     rootURL + "Token",
+        //     { username: login, password: senha, grant_type: "password", origem:$rootScope.origem },
+        //     {
+        //       headers: { "Content-Type": "multpart/form-data; charset=UTF-8" },
+        //       transformRequest: transform
+        //     }
+        //   )
+        //   .success(function(response) {
+
+        //         callback(response);
+
+        //   }).error(function(response) {
+
+        //       console.log(response);
+        //       sysServicos.sendWarnMsg('<span class="ngn-alertLogin">' + response.error_description + '</span>');
+
+        //   });
+        
       };
 
       //Recebemos o momento de expiração do token
@@ -89,6 +84,9 @@
       return service;
     }
   ])
+
+
+
   //nao utilizado
   .factory("Base64", function() {
     /* jshint ignore:start */

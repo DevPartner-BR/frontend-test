@@ -32,12 +32,8 @@ app.controller("appController", [
         if ($scope.initializedCpf == '' || $scope.initializedCpf == undefined) {
             sysServicos.sendWarnMsg('Preencher o campo Usuario.');
         } else {
-            //var strCpf = $scope.initializedCpf.toString();
-            //$scope.initializedCpf = strCpf.substr(0, 3) + '.' + strCpf.substr(3, 3) + '.' + strCpf.substr(6, 3) + '-' + strCpf.substr(9, 2);
-            //console.log($scope.initializedCpf);
             objCpf = {};
             objCpf.cpf = $scope.initializedCpf;
-            /*console.log(objCpf.cpf);*/
             var promise = $http.post(rootURL + 'acesso/esqueceuSenha', { cpf: $scope.initializedCpf });
             promise.then(
           function(ret) {
@@ -64,9 +60,7 @@ app.controller("appController", [
     };
 
     $scope.login = function() {
-      //window.open(rootURLInter + 'app/index.html', '_self');
 
-        //AuthenticationService.Login(formatUsuario($scope.usuario),$scope.senha,function(response) {
         AuthenticationService.Login($scope.usuario, $scope.senha, function (response) {
           $scope.access_token_01 = response.access_token;
           //Aqui pegamos o tempo de retorno da expiração e armazenamos para posterior consulta
