@@ -17,8 +17,10 @@ Crie uma branch com o seu nome e sobre nome e depois instale as dependências.
 
 **1. Clone do Projeto**
 ```sh
-git clone "https://github.com/DevPartner-BR/frontend-test.git"
+git clone "https://github.com/**seu-usuario**/frontend-test.git"
 ```
+*no lugar do "seu-usuario" coloque o seu usuário do github :)
+
 **2. Criando nova Branch**
 ```sh
 git checkout -b "meunomeEsobrenome"
