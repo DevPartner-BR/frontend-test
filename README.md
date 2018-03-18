@@ -13,25 +13,29 @@ Essa teste consiste em entendermos um pouco mais sobre seus conhecimentos com [H
 
 ## | Orientações
 Primeiramente, faça um fork e clone do projeto;
-Crie uma branch com o seu nome e sobre nome e depois instale as dependências.
+Crie uma branch com o seu nome e sobre nome e depois instale as dependências.   
 
-**1. Clone do Projeto**
+**1. Dê um like e um Fork =)**
+
+![alt text](./assets/image01.png "imagem fork")
+
+**2. Clone do Projeto**
 ```sh
 git clone "https://github.com/**seu-usuario**/frontend-test.git"
 ```
 *no lugar do "seu-usuario" coloque o seu usuário do github :)
 
-**2. Criando nova Branch**
+**3. Criando nova Branch**
 ```sh
 git checkout -b "meunomeEsobrenome"
 ```
-**3. Instalando as dependências**
+**4. Instalando as dependências**
 
 ```sh
 npm install
 ```
 
-**4. Agora é rodar a aplicação**
+**5. Agora é rodar a aplicação**
 ```sh
 npm start
 ```
