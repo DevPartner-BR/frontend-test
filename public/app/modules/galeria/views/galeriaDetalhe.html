@@ -1,0 +1,101 @@
+﻿<div
+  <div class="container">
+
+    <div class="panel mt20">
+      <div class="panel-heading">
+        <h2>Cadastro de Galeria</h2>
+      </div>
+      <div class="panel-body admin-form">
+        <form ng-submit="add()">
+          <div class="row mt40">
+            <div class="col-xs-12 col-sm-12 mt40">
+              <div class="form-group">
+                <md-input-container class="md-block flex-gt-sm">
+                  <label>
+                    Título
+                    <strong class="txt-obrigatorio">*</strong>
+                  </label>
+                  <input type="text" ng-model="post.titulo">
+                </md-input-container>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12">
+              <div class="form-group">
+                <md-input-container class="md-block flex-gt-sm">
+                  <label>
+                    Subtítulo
+                    <strong class="txt-obrigatorio">*</strong>
+                  </label>
+                  <input type="text" ng-model="post.subTitulo">
+                </md-input-container>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12">
+              <div class="form-group">
+                <md-input-container class="md-block flex-gt-sm">
+                  <label>
+                    Texto
+                    <strong class="txt-obrigatorio">*</strong>
+                  </label>
+                  <input type="text" ng-model="post.conteudo">
+                </md-input-container>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12">
+              <div class="form-group">
+                <md-input-container class="md-block flex-gt-sm">
+                  <label>
+                    Link da imagem
+                    <strong class="txt-obrigatorio">*</strong>
+                  </label>
+                  <input type="text" ng-model="post.imagemThumbnailUrl">
+                </md-input-container>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12">
+              <div class="form-group">
+                <md-input-container class="md-block flex-gt-sm">
+                  <label>
+                    Youtube Id
+                    <strong class="txt-obrigatorio">*</strong>
+                  </label>
+                  <input type="text" ng-model="post.youtubeId">
+                  <span id="ptest" class="glyphicon glyphicon-question-sign toltip-question" aria-hidden="true" type="button" data-container="body"
+                        data-toggle="popover" data-placement="bottom" title="Exemplo: B65ghzKoFUE" data-content="O Id fica no final da url do video http://www.youtube.com/B65ghzKoFUE"></span>
+                  <script>
+                    $(document).ready(function () {
+                      $('#ptest').popover({
+                        html: true,
+                        trigger: 'click hover'
+                      });
+                    });
+                  </script>
+                </md-input-container>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <small>* campos obrigatórios</small>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 text-center mt20 mb20">
+
+                <button type="submit" class="btn btn-xl btn-success">Salvar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--fim do body do painel-->
+  </div>
+  <!--Fim do painel-->
+</div>
+<!--Fim do container-->

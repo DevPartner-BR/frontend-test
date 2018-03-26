@@ -1,4 +1,4 @@
-# | Frontend na DevPartner
+﻿# | Frontend na DevPartner
 
 ## | Sobre a DevPartner
 
@@ -82,3 +82,7 @@ Aqui usamos muito o [Visual Studio](https://www.visualstudio.com/) e [VS Code](h
 
 
 <sub>Os dados presentes neste teste são totalmente fictícios.</sub>
+
+## | Sobre as modificações realizadas:
+Antes de rodar pela primeira vez rodar: npm install nodemon express consign body-parser mongoose.
+Depois de rodar o "npm install" iniciar o "mongod" e então iniciar a aplicação atráves do "npm start" que já está configurado para rodar com o nodemon.
