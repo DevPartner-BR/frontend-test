@@ -1,0 +1,62 @@
+﻿[
+    {
+        "galeriaId": 1,
+        "titulo": "Metrô bala chega no Brasil",
+        "subTitulo": "fake news",
+        "conteudo": "O Fuxing representa uma melhora significativa dos trens-bala anteriores, conhecidos como Hexie. Completamente projetado e fabricado na China, o Fuxing tem mais espaço e possui consumo mais eficiente de energia, com uma vida útil mais longa e uma melhor confiabilidade.",
+        "perfilgaleria": [],
+        "imagemPrincipal": {
+            "imagemPrincipalId": "467f4a33-52c5-4128-9dd0-1186ca5cfdf8_image01.jgp",
+            "url": "https://ca.res.keymedia.com/files/image/crowda.jpg"
+        },
+        "imagemThumbnail": {
+            "imagemThumbnailId": "8f251e9b-28a4-4998-b12b-c0913f1e0e5a_image02.jpg",
+            "url": "https://ca.res.keymedia.com/files/image/crowda.jpg"
+        }
+    },
+    {
+        "galeriaId": 9,
+        "titulo": "Brasil é campeão da Copa do Mundo!",
+        "subTitulo": "essa é uma fakenews criada para Alemanha",
+        "conteudo": "O Campeonato Brasileiro de Futebol é o torneio nacional mais importante disputado em nosso país. É disputado anualmente, sempre no segundo semestre. A relevância desse campeonato se dá não apenas por permitir ao torcedor que afirme que seu time é o melhor do Brasil, mas também porque conquistar um dos quatro primeiros lugares do Campeonato Brasileiro classifica, automaticamente, o time para a disputa da Copa Libertadores da América.",
+        "perfilgaleria": [],
+        "imagemPrincipal": {
+            "imagemPrincipalId": "fd7a02c8-8952-4af2-aa14-fb6e4832dccc_image03.jpg",
+            "url": "https://3.bp.blogspot.com/-ZCEx9yKzeVs/TzXAK6SZC1I/AAAAAAAASW0/7GxgzAGLY6Y/s640/brasil--bandeira_6649_1920x1200.jpg"
+        },
+        "imagemThumbnail": {
+            "imagemThumbnailId": "1eb5a3b9-9dfb-4843-8b6c-a9c2b280416d_image04.jpg",
+            "url": "https://3.bp.blogspot.com/-ZCEx9yKzeVs/TzXAK6SZC1I/AAAAAAAASW0/7GxgzAGLY6Y/s640/brasil--bandeira_6649_1920x1200.jpg"
+        }
+    },
+    {
+        "galeriaId": 100,
+        "titulo": "All Blacks vem para o Brasil",
+        "subTitulo": "fakenews ;)",
+        "conteudo": "El último jugador 'cazado' ha sido Ben Qauqau-Dodds, en su caso por tener en su poder un esteroide llamado metandienona, muy común en la halterofilia, que se ingiere por vía oral para favorecer la síntesis de las proteínas por parte del organismo y aumentar así el tejido muscular. ",
+        "perfilgaleria": [],
+        "imagemPrincipal": {
+            "imagemPrincipalId": "4ec826ca-4bdc-46b4-be8d-9fb30458f01b_image05.jpg",
+            "url": "https://i.pinimg.com/originals/fc/17/d0/fc17d000b6480b2d44024b2e11911e50.jpg"
+        },
+        "imagemThumbnail": {
+            "imagemThumbnailId": "9dd026f8-9822-404f-bc9c-129fe8708ae8_image06.jpg",
+            "url": "https://i.pinimg.com/originals/fc/17/d0/fc17d000b6480b2d44024b2e11911e50.jpg"
+        }
+    },
+    {
+        "galeriaId": 0,
+        "titulo": "Devpartner faz parte do grupo LTM",
+        "subTitulo": "real news! ;)",
+        "conteudo": "Líder no B2B2C e com 10 anos de experiência, desenvolvemos programas de fidelidade, campanhas de incentivo e soluções de recompensa. Do planejamento à execução, oferecemos soluções tecnológicas e suporte completo para cada fase do seu projeto.",
+        "perfilgaleria": [],
+        "imagemPrincipal": {
+            "imagemPrincipalId": "7c7fc1b8-ed17-485f-8143-6531cc8b934f_image07.gif",
+            "url": "http://devpartner.com.br/img/logo.gif"
+        },
+        "imagemThumbnail": {
+            "imagemThumbnailId": "7bab8277-d063-4930-ba63-a20de5924006_image08.gif",
+            "url": "http://devpartner.com.br/img/logo.gif"
+        }
+    }
+]
