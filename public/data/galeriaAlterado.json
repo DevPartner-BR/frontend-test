@@ -1,0 +1,34 @@
+﻿[
+  {
+    "galeriaId": 1,
+    "titulo": "Metrô bala chega no Brasil",
+    "subTitulo": "fake news",
+    "conteudo": "O Fuxing representa uma melhora significativa dos trens-bala anteriores, conhecidos como Hexie. Completamente projetado e fabricado na China, o Fuxing tem mais espaço e possui consumo mais eficiente de energia, com uma vida útil mais longa e uma melhor confiabilidade.",
+    "youtubeId": "https://www.youtube.com/watch?v=op0QGToPOdU",
+    "imagemThumbnailUrl": "https://ca.res.keymedia.com/files/image/crowda.jpg"
+  },
+  {
+    "galeriaId": 9,
+    "titulo": "Brasil é campeão da Copa do Mundo!",
+    "subTitulo": "essa é uma fakenews criada para Alemanha",
+    "conteudo": "O Campeonato Brasileiro de Futebol é o torneio nacional mais importante disputado em nosso país. É disputado anualmente, sempre no segundo semestre. A relevância desse campeonato se dá não apenas por permitir ao torcedor que afirme que seu time é o melhor do Brasil, mas também porque conquistar um dos quatro primeiros lugares do Campeonato Brasileiro classifica, automaticamente, o time para a disputa da Copa Libertadores da América.",
+    "youtubeId": "https://www.youtube.com/watch?v=AE_fwNo5cNg",
+    "imagemThumbnailUrl": "https://3.bp.blogspot.com/-ZCEx9yKzeVs/TzXAK6SZC1I/AAAAAAAASW0/7GxgzAGLY6Y/s640/brasil--bandeira_6649_1920x1200.jpg"
+  },
+  {
+    "galeriaId": 100,
+    "titulo": "All Blacks vem para o Brasil",
+    "subTitulo": "fakenews ;)",
+    "conteudo": "El último jugador 'cazado' ha sido Ben Qauqau-Dodds, en su caso por tener en su poder un esteroide llamado metandienona, muy común en la halterofilia, que se ingiere por vía oral para favorecer la síntesis de las proteínas por parte del organismo y aumentar así el tejido muscular. ",
+    "youtubeId": "https://www.youtube.com/watch?v=XBhqONm-LV8",
+    "imagemThumbnailUrl": "https://i.pinimg.com/originals/fc/17/d0/fc17d000b6480b2d44024b2e11911e50.jpg"
+  },
+  {
+    "galeriaId": 0,
+    "titulo": "Devpartner faz parte do grupo LTM",
+    "subTitulo": "real news! ;)",
+    "conteudo": "Líder no B2B2C e com 10 anos de experiência, desenvolvemos programas de fidelidade, campanhas de incentivo e soluções de recompensa. Do planejamento à execução, oferecemos soluções tecnológicas e suporte completo para cada fase do seu projeto.",
+    "youtubeId": "https://www.youtube.com/watch?v=jfLNLhj0z_Y",
+    "imagemThumbnailUrl": "http://devpartner.com.br/img/logo.gif"
+  }
+]
