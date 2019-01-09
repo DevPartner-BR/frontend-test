@@ -46,7 +46,7 @@ A sua primeira interação será com a página de Login, para facilitar deixamos
 
 ### Depois do setup você precisará seguir as seguintes instruções, para construir a aplicação:
 
-1. Desenvolver a página, que tem o seu layout em **galeria.jpg** *(fique tranquilo que facilitamos esta parte. Já criamos a index da galeria)* e os outros itens, contamos com a sua criatividade e senso de coerência.
+1. Desenvolver a página - contamos com a sua criatividade e senso de coerência.
 2. Criar um JavaScript usando o Angularjs que faça o CRUD (Create, Read, Update and Delete) utilizando como fonte o arquivo **/galeria.json** localizado em **/devpartner/Devpartner-PortalAdmin/data**.
   * Apresentar os dados do arquivo json nas telas de **index**, **create** e **edit**.
 3.  **NÃO** alterar o arquivo **galeria.json**. Em hipótese nenhuma!
