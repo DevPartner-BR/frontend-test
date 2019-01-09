@@ -51,7 +51,7 @@ A sua primeira interação será com a página de Login, para facilitar deixamos
   * Apresentar os dados do arquivo json nas telas de **index**, **create** e **edit**.
 3.  **NÃO** alterar o arquivo **galeria.json**. Em hipótese nenhuma!
 4. Se for preciso modificar a estrutura e workflow, atualizar o README.
-5. Submeta o Pull Request e envie um email para **carlos.ribeiro@devpartner.com.br** :D
+5. Submeta o Pull Request e envie um email para **fabiana.carvalhal@devpartner.com.br e samara.freitas@devpartner.com.br** :D
 
 O que acontece depois ?
 Avaliaremos a sua **Pull Request** e se estiver atendendo os requisitos obrigatórios, marcaremos uma apresentação do exercício, afinal de contas, ninguém melhor que próprio desenvolvedor para explicar o seu projeto =)
