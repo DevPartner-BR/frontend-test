@@ -42,7 +42,7 @@ npm start
 
 ***Observação:** fique a vontade para persisitir os dados no banco que for da sua preferência. Aqui usamos MS-SQL e similares mas também curtimos NOSQL*
 
-A sua primeira interação será com a página de Login, para facilitar deixamos padráo usuário **admin** e senha **admin**.
+A sua primeira interação será com a página de Login, para facilitar deixamos padrão usuário **admin** e senha **admin**.
 
 ### Depois do setup você precisará seguir as seguintes instruções, para construir a aplicação:
 
@@ -54,7 +54,7 @@ A sua primeira interação será com a página de Login, para facilitar deixamos
 5. Submeta o Pull Request e envie um email para **fabiana.carvalhal@devpartner.com.br e samara.freitas@devpartner.com.br** :D
 
 O que acontece depois ?
-Avaliaremos a sua **Pull Request** e se estiver atendendo os requisitos obrigatórios, marcaremos uma apresentação do exercício, afinal de contas, ninguém melhor que próprio desenvolvedor para explicar o seu projeto =)
+Avaliaremos a sua **Pull Request** e se estiver atendendo os requisitos obrigatórios, marcaremos uma apresentação do exercício, afinal de contas, ninguém melhor que o próprio desenvolvedor para explicar o seu projeto =)
 *fique tranquilo já passamos por isso também*
 
 ## | Requisitos obrigatórios
