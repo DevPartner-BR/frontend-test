@@ -191,7 +191,7 @@ app.controller('getUserData', ['$scope', '$http', '$rootScope', 'sysServicos', '
             });
         };
 
-        /*
+        
         var promise = $http.get(rootURL + 'consumidor');
         promise.then(
             function (ret) {
@@ -201,7 +201,7 @@ app.controller('getUserData', ['$scope', '$http', '$rootScope', 'sysServicos', '
             function (err) {
                 sysServicos.sendErrorMsg(err.status, err.statusText, err.config.url, err.data.mensagem);
             }
-        );*/
+        );
     }
 ]);
 

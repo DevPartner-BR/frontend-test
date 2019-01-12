@@ -3,16 +3,16 @@ app.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
     $urlRouterProvider.otherwise("/galeria");
 
     $ocLazyLoadProvider.config({
-        'debug': true, // For debugging 'true/false'
+        'debug': false, // For debugging 'true/false'
         'events': true, // For Event 'true/false'
         'modules': [{
-                name: 'galeria',
-                files: ['../app/modules/galeria/controllers/galeriaCtrl.js']
-            }]
+            name: 'galeria',
+            files: ['../app/modules/galeria/controllers/galeriaCtrl.js']
+        }]
     });
 
     $stateProvider
-        
+
         //Galeria List
         .state('galeria', {
             url: '/galeria',
@@ -31,6 +31,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
         //Galeria Detalhes
         .state('galeriaDetalhe', {
             url: '/galeria/:galeriaId',
+            params: { tipo: null, objeto: {} },
             views: {
                 '': {
                     templateUrl: '../app/modules/galeria/views/galeriaDetalhe.html'
@@ -43,7 +44,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
             }
         })
 
-        
+
 
 }).run(function ($rootScope, $state) {
     $rootScope.$state = $state;

@@ -1,9 +1,11 @@
-﻿<div ng-controller="galeriaDetController">
+﻿<div ng-controller="galeriaDetController" ng-init="carregar()">
     <div class="container">
 
         <div class="panel mt20">
             <div class="panel-heading">
-                <h2>Cadastro de Galeria</h2>
+                <h2 ng-if="tipo === 'alterar'">Editar item de Galeria</h2>
+                <h2 ng-if="tipo === 'deletar'">Deletar item de Galeria</h2>
+                <h2 ng-if="tipo === 'visualizar' || tipo ==='adicionar'">Cadastro item de Galeria</h2>
             </div>
             <div class="panel-body admin-form">
                 <div class="row mt40">
@@ -13,7 +15,7 @@
                                 <label>Título
                                     <strong class="txt-obrigatorio">*</strong>
                                 </label>
-                                <input type="text" >
+                                <input ng-disabled="tipo === 'visualizar' || tipo === 'deletar'" type="text" ng-model="dado.titulo">
                             </md-input-container>
                         </div>
                     </div>
@@ -24,7 +26,7 @@
                                 <label>Subtítulo
                                     <strong class="txt-obrigatorio">*</strong>
                                 </label>
-                                <input type="text">
+                                <input type="text" ng-disabled="tipo === 'visualizar' || tipo === 'deletar'" ng-model="dado.subTitulo">
                             </md-input-container>
                         </div>
                     </div>
@@ -35,7 +37,10 @@
                                 <label>Texto
                                     <strong class="txt-obrigatorio">*</strong>
                                 </label>
-                                <input  type="text">
+                                <textarea type="text" ng-disabled="tipo === 'visualizar' || tipo === 'deletar'"
+                                    ng-model="dado.conteudo">
+
+                                </textarea>
                             </md-input-container>
                         </div>
                     </div>
@@ -46,9 +51,10 @@
                                 <label>Youtube Id
                                     <strong class="txt-obrigatorio">*</strong>
                                 </label>
-                                <input type="text"></input>
-                                <span id="ptest" class="glyphicon glyphicon-question-sign toltip-question" aria-hidden="true" type="button" data-container="body"
-                                    data-toggle="popover" data-placement="bottom" title="Exemplo: B65ghzKoFUE" data-content="O Id fica no final da url do video http://www.youtube.com/B65ghzKoFUE"></span>
+                                <input type="text" ng-disabled="tipo === 'visualizar' || tipo === 'deletar'" ng-model="dado.imagemThumbnail.url"></input>
+                                <span id="ptest" class="glyphicon glyphicon-question-sign toltip-question" aria-hidden="true"
+                                    type="button" data-container="body" data-toggle="popover" data-placement="bottom"
+                                    title="Exemplo: B65ghzKoFUE" data-content="O Id fica no final da url do video http://www.youtube.com/B65ghzKoFUE"></span>
                                 <script>
                                     $(document).ready(function () {
                                         $('#ptest').popover({
@@ -69,8 +75,18 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 text-center mt20 mb20">
-
-                            <button type="button" class="btn btn-xl btn-success" >Salvar</button>
+                            <button ng-click="adicionar()" ng-if="tipo === 'adicionar'" type="button" class="btn btn-xl btn-default">
+                                Salvar
+                            </button>
+                            <button ng-click="alterar()" ng-if="tipo === 'alterar'" type="button" class="btn btn-xl btn-success">
+                                Salvar
+                            </button>
+                            <button ng-click="deletar()" ng-if="tipo === 'deletar'" type="button" class="btn btn-xl btn-danger">
+                                Excluir
+                            </button>
+                            <button ng-click="voltar()" ng-if="tipo === 'visualizar'" type="button" class="btn btn-xl btn-info">
+                                Voltar
+                            </button>
                         </div>
                     </div>
                 </div>

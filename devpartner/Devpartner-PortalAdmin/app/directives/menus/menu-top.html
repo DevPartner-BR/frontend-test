@@ -1,7 +1,7 @@
 ﻿<div ng-controller="getUserData">
     <header class="menu-admin">
         <div class="container">
-            <div class="col-md-2 col-sm-3 col-xs-10"><img class="logo-main img-responsive" src="/assets/img/logoTop.png" alt=""></div>
+            <div class="col-md-2 col-sm-3 col-xs-10"><img class="logo-main img-responsive" src="/assets/img/logoTop.png"></div>
 
             <div class="col-md-8 col-sm-7 col-xs-2">
                 <nav class="navbar navbar-default">
@@ -19,8 +19,6 @@
             </div>
             <div class="col-md-2 col-sm-2 col-xs-12 hidden-xs mt10">
                 <button class="btn btn-warning mt14 btn-logout pull-right" ng-click="logOut()">Sair</button>
-                <!--<button class="btn btn-primary mt14 btn-logout pull-right" ui-sref="usuario">{{userName}}</button> 
-                <button class="btn btn-primary mt14 btn-logout pull-right" ui-sref="usuario"><img src="/assets/img/icon-user.png" alt="Usuários" title="Usuários" /></button>-->
             </div>
         </div>
     </header>
@@ -29,14 +27,12 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <nav class="navbar navbar-default">
 
-                        
-                        <div class="collapse navbar-collapse" id="menu-top">
-                            <ul class="nav navbar-nav ">
-                                
-                                
-                                <li ui-sref-active="active" ng-class="{active: $state.includes('galeria')}"><a ui-sref="galeria" ng-click="closeSubMenu()">Galeria</a></li>
-                                </ul>
-                        </div>
+                    <div class="collapse navbar-collapse" id="menu-top">
+                        <ul class="nav navbar-nav ">
+                            <li ui-sref-active="active" ng-class="{active: $state.includes('galeria')}"><a ui-sref="galeria"
+                                    ng-click="closeSubMenu()">Galeria</a></li>
+                        </ul>
+                    </div>
 
                 </nav>
             </div>
@@ -44,12 +40,9 @@
     </nav>
     <div class="col-xs-12">
         <ul class="nav navbar-nav content-center collapse navbar-collapse" id="menuOptions">
-            
-           
+
             <li ui-sref-active="active"><a ui-sref="galeria">Galeria</a></li>
-           
             <li>
-                <!--<button class="btn btn-primary mt14 btn-logout pull-right" ui-sref="usuario">{{userName}}</button> -->
                 <button class="btn btn-warning mt14 btn-logout pull-right" ng-click="logOut()">Sair</button>
             </li>
         </ul>
