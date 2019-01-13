@@ -61,6 +61,16 @@ app.controller('loadMenu', ['$scope', '$http', '$rootScope', 'sysServicos', '$st
             }
         );
 
+        function meuController1($scope) {
+            $scope.title = 'algo';
+
+            $scope.todos = [
+                {text:'coisar' , when:'hoje'},
+                {text:'coisar3' , when:'amamnha'},
+                {text:'coisar9' , when:'depois'},
+            ]
+        }
+        
         $scope.makeMenu = function (dataSet) {
             
             $scope.menuAreas = [];
