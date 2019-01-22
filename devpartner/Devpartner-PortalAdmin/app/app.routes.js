@@ -12,13 +12,14 @@ app.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
     });
 
     $stateProvider
-        
+
         //Galeria List
         .state('galeria', {
             url: '/galeria',
             views: {
                 '': {
-                    templateUrl: '../app/modules/galeria/views/galeriaList.html'
+                    templateUrl: '../app/modules/galeria/views/galeriaList.html',
+                    controller: 'galeriaController',
                 }
             },
             resolve: {
@@ -33,7 +34,8 @@ app.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
             url: '/galeria/:galeriaId',
             views: {
                 '': {
-                    templateUrl: '../app/modules/galeria/views/galeriaDetalhe.html'
+                    templateUrl: '../app/modules/galeria/views/galeriaDetalhe.html',
+                    controller: 'galeriaDetController',
                 }
             },
             resolve: {
@@ -43,7 +45,37 @@ app.config(function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
             }
         })
 
-        
+        .state('galeriaCadastro', {
+          url: '/galeria/cadastro',
+          views: {
+            '': {
+              templateUrl: '../app/modules/galeria/views/galeriaDetalhe.html',
+              controller: 'galeriaCadController',
+            }
+          },
+          resolve: {
+            loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+              return $ocLazyLoad.load('galeria');
+            }]
+          },
+        })
+
+        .state('galeriaVisualizar', {
+          url: '/visualizar',
+          views: {
+            '': {
+              templateUrl: '../app/modules/galeria/views/galeriaVisualizar.html',
+              controller: 'galeriaDetController',
+            }
+          },
+          // resolve: {
+          //   loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+          //     return $ocLazyLoad.load('galeria');
+          //   }]
+          // },
+        })
+
+
 
 }).run(function ($rootScope, $state) {
     $rootScope.$state = $state;
