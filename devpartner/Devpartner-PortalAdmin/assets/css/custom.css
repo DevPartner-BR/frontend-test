@@ -248,13 +248,20 @@ padding-top: 10px;
 
 /* FOOTER */
 #content-footer{
-    position:relative;
+    position: absolute;
+    bottom: 0;
     width:100%;
     left:unset;
-    background-color: #6a1111;
+    background-color: #4CB57E;
     border-top: none;
     height: 36px;
     padding: 8px;
+    color: white;
+}
+@media screen and (max-width: 765px) {
+    .footer-text {
+        text-align: center !important;
+    }
 }
 #content-footer.loginFooter{
     width: 100%;
@@ -1461,31 +1468,13 @@ tr.blue-line > td{
 }
 .ng-scope > .ui-grid-filter-button{
     display:block;
-    //top: 20px !important;
+    /* top: 20px !important; */
 }
-
-
-
-.ui-grid-disable-selection {
-
-}
-.ui-grid-icon-ok::before {
-    
-}
-.ui-grid-header-viewport {
-    
-}
-
-
 .ui-grid-header-canvas{
     font-size: 13px;
     color: #fff;
     font-weight: normal;
 }
-.ui-grid-header-cell:last-child .ui-grid-column-resizer.right{
-   
-}
-
 /**/
 .ui-grid-row{
     border-bottom:28px solid #d2d4d6;
@@ -2145,6 +2134,16 @@ tags-input .tags.focused{
     height: -moz-calc(100vh - 121px);
     height: -webkit-calc(100vh - 121px);
     background-color:#ebebf2;
+}
+.td-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 10px; 
+}
+.table-icon {
+    font-size: 20px;
+    cursor: pointer;
 }
 /* OUTROS ESTILOS FIM */
 
