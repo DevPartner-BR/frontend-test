@@ -1,4 +1,4 @@
-app.controller("appController", ["$scope", "$http", "$rootScope", "ngNotify", '$cookieStore', 'sysServicos', 
+app.controller("appController", ["$scope", "$http", "$rootScope", "ngNotify", '$cookieStore', 'sysServicos',
 function ($scope, $http, $rootScope, ngNotify, $cookieStore, sysServicos) {
     //var controllerMaster;//usado para passar o nome do controller quando ocorre um erro na promise
 
@@ -62,7 +62,7 @@ app.controller('loadMenu', ['$scope', '$http', '$rootScope', 'sysServicos', '$st
         );
 
         $scope.makeMenu = function (dataSet) {
-            
+
             $scope.menuAreas = [];
             for (var n = 0; n < dataSet.length ; n++) {
                 $scope.menuAreas[n] = dataSet[n];
@@ -80,7 +80,7 @@ app.controller('loadMenu', ['$scope', '$http', '$rootScope', 'sysServicos', '$st
 
         //controla as acoes de click nos itens do menu
         $scope.ctrlAction = function (estado,url) {
-            
+
             if (estado == 'OLD') {
                 $state.go('OLD', { stateUrl: url }, { reload: true });
             } else if(url!=''){
@@ -96,14 +96,14 @@ app.controller('getUserData', ['$scope', '$http', '$rootScope', 'sysServicos', '
         //
         $scope.flagMenu = true;
         $scope.flagSubMenu = true;
-        
+
         $scope.changeMenu = function () {
             $scope.flagMenu = !$scope.flagMenu;
             if (!$scope.flagMenu) {
                 angular.element('#menuOptions').addClass('showElem');
             } else {
                 angular.element('#menuOptions').removeClass('showElem');
-            };  
+            };
         };
 
         $scope.changeSubMenu = function () {
@@ -144,7 +144,7 @@ app.controller('getUserData', ['$scope', '$http', '$rootScope', 'sysServicos', '
         // exporta excel relatorio/cadastros
         $scope.excelCadastros = function (target) {
             //console.log('exporta execel');
-            
+
             var url = rootURL + 'admin/relatorio/cliente';
             $http({
                 url: url,
@@ -215,7 +215,7 @@ app.controller('loadMsgAviso', ['$scope', '$http', '$rootScope', 'sysServicos',
                 $scope.mgsAvisos = ret.data;
                 $scope.mgsAvisos.counter = 0;
                 $scope.mgsAvisos.view = false;
-                    
+
                 for (n = 0; n < $scope.mgsAvisos.length;n++) {
                     if (!$scope.mgsAvisos[0].visualizada) {
                         $scope.mgsAvisos.counter++;
