@@ -61,6 +61,7 @@ app.controller('loadMenu', ['$scope', '$http', '$rootScope', 'sysServicos', '$st
             }
         );
 
+        
         $scope.makeMenu = function (dataSet) {
             
             $scope.menuAreas = [];

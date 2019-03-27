@@ -29,6 +29,12 @@ git clone "https://github.com/**seu-usuario**/frontend-test.git"
 ```sh
 git checkout -b "meunomeEsobrenome"
 ```
+**4. Rodando o json**
+*Baixar o json-server caso nao tenha. ir na pasta **/devpartner/Devpartner-PortalAdmin/data** e digitar...*
+```sh
+json-server galeria.json
+```
+
 **4. Instalando as dependências**
 
 ```sh

@@ -13,8 +13,10 @@
                                 <label>Título
                                     <strong class="txt-obrigatorio">*</strong>
                                 </label>
-                                <input type="text" >
+                                <input type="text" ng-model="galeria.titulo" name="galeriaTitulo" >
+                                <p>{{galeria.titulo}}</p>
                             </md-input-container>
+                            
                         </div>
                     </div>
 
@@ -24,7 +26,8 @@
                                 <label>Subtítulo
                                     <strong class="txt-obrigatorio">*</strong>
                                 </label>
-                                <input type="text">
+                                <input type="text" ng-model="galeria.subtitulo" name="galeriaSubtitulo">
+                               <p> {{galeria.subtitulo}}</p>
                             </md-input-container>
                         </div>
                     </div>
@@ -35,7 +38,8 @@
                                 <label>Texto
                                     <strong class="txt-obrigatorio">*</strong>
                                 </label>
-                                <input  type="text">
+                                <input  type="text" ng-model="galeria.conteudo" name="galeriaConteudo">
+                                {{galeria.conteudo}}
                             </md-input-container>
                         </div>
                     </div>
@@ -46,7 +50,8 @@
                                 <label>Youtube Id
                                     <strong class="txt-obrigatorio">*</strong>
                                 </label>
-                                <input type="text"></input>
+                                <input type="text" ng-model="galeria.youtube" name='galeriaYoutube'></input>
+                                {{galeria.youtube}}
                                 <span id="ptest" class="glyphicon glyphicon-question-sign toltip-question" aria-hidden="true" type="button" data-container="body"
                                     data-toggle="popover" data-placement="bottom" title="Exemplo: B65ghzKoFUE" data-content="O Id fica no final da url do video http://www.youtube.com/B65ghzKoFUE"></span>
                                 <script>
@@ -70,7 +75,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 text-center mt20 mb20">
 
-                            <button type="button" class="btn btn-xl btn-success" >Salvar</button>
+                        <button type="button" ng-click="adicionarGaleria(galeria)" class="btn btn-xl btn-success" >Salvar</button>
                         </div>
                     </div>
                 </div>
